@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ADF5302425CB526200762281 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF5301A25CB526200762281 /* EssentialFeed.framework */; };
+		AD18E1A625CB7FC00073FBDC /* RemoteFeedLoaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD18E1A525CB7FC00073FBDC /* RemoteFeedLoaderTest.swift */; };
 		ADF5303925CB527800762281 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF5303825CB527800762281 /* FeedItem.swift */; };
 		ADF5303D25CB547F00762281 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF5303C25CB547F00762281 /* FeedLoader.swift */; };
+		ADF5304925CB580B00762281 /* EssentialFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF5304825CB580B00762281 /* EssentialFeedTests.swift */; };
+		ADF5304B25CB580B00762281 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF5301A25CB526200762281 /* EssentialFeed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		ADF5302525CB526200762281 /* PBXContainerItemProxy */ = {
+		ADF5304C25CB580B00762281 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADF5301125CB526200762281 /* Project object */;
 			proxyType = 1;
@@ -23,12 +25,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD18E1A525CB7FC00073FBDC /* RemoteFeedLoaderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTest.swift; sourceTree = "<group>"; };
 		ADF5301A25CB526200762281 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF5301E25CB526200762281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADF5302325CB526200762281 /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADF5302A25CB526200762281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADF5303825CB527800762281 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		ADF5303C25CB547F00762281 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
+		ADF5304625CB580B00762281 /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF5304825CB580B00762281 /* EssentialFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedTests.swift; sourceTree = "<group>"; };
+		ADF5304A25CB580B00762281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,11 +43,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADF5302025CB526200762281 /* Frameworks */ = {
+		ADF5304325CB580B00762281 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADF5302425CB526200762281 /* EssentialFeed.framework in Frameworks */,
+				ADF5304B25CB580B00762281 /* EssentialFeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				ADF5301C25CB526200762281 /* EssentialFeed */,
-				ADF5302725CB526200762281 /* EssentialFeedTests */,
+				ADF5304725CB580B00762281 /* EssentialFeedTests */,
 				ADF5301B25CB526200762281 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				ADF5301A25CB526200762281 /* EssentialFeed.framework */,
-				ADF5302325CB526200762281 /* EssentialFeedTests.xctest */,
+				ADF5304625CB580B00762281 /* EssentialFeedTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,16 +76,26 @@
 			isa = PBXGroup;
 			children = (
 				ADF5301E25CB526200762281 /* Info.plist */,
-				ADF5303825CB527800762281 /* FeedItem.swift */,
-				ADF5303C25CB547F00762281 /* FeedLoader.swift */,
+				ADF5304025CB569C00762281 /* FeedFeature */,
 			);
 			path = EssentialFeed;
 			sourceTree = "<group>";
 		};
-		ADF5302725CB526200762281 /* EssentialFeedTests */ = {
+		ADF5304025CB569C00762281 /* FeedFeature */ = {
 			isa = PBXGroup;
 			children = (
-				ADF5302A25CB526200762281 /* Info.plist */,
+				ADF5303C25CB547F00762281 /* FeedLoader.swift */,
+				ADF5303825CB527800762281 /* FeedItem.swift */,
+			);
+			path = FeedFeature;
+			sourceTree = "<group>";
+		};
+		ADF5304725CB580B00762281 /* EssentialFeedTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADF5304825CB580B00762281 /* EssentialFeedTests.swift */,
+				ADF5304A25CB580B00762281 /* Info.plist */,
+				AD18E1A525CB7FC00073FBDC /* RemoteFeedLoaderTest.swift */,
 			);
 			path = EssentialFeedTests;
 			sourceTree = "<group>";
@@ -117,22 +131,22 @@
 			productReference = ADF5301A25CB526200762281 /* EssentialFeed.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		ADF5302225CB526200762281 /* EssentialFeedTests */ = {
+		ADF5304525CB580B00762281 /* EssentialFeedTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADF5303125CB526200762281 /* Build configuration list for PBXNativeTarget "EssentialFeedTests" */;
+			buildConfigurationList = ADF5304E25CB580B00762281 /* Build configuration list for PBXNativeTarget "EssentialFeedTests" */;
 			buildPhases = (
-				ADF5301F25CB526200762281 /* Sources */,
-				ADF5302025CB526200762281 /* Frameworks */,
-				ADF5302125CB526200762281 /* Resources */,
+				ADF5304225CB580B00762281 /* Sources */,
+				ADF5304325CB580B00762281 /* Frameworks */,
+				ADF5304425CB580B00762281 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				ADF5302625CB526200762281 /* PBXTargetDependency */,
+				ADF5304D25CB580B00762281 /* PBXTargetDependency */,
 			);
 			name = EssentialFeedTests;
 			productName = EssentialFeedTests;
-			productReference = ADF5302325CB526200762281 /* EssentialFeedTests.xctest */;
+			productReference = ADF5304625CB580B00762281 /* EssentialFeedTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -148,7 +162,7 @@
 						CreatedOnToolsVersion = 12.3;
 						LastSwiftMigration = 1230;
 					};
-					ADF5302225CB526200762281 = {
+					ADF5304525CB580B00762281 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -167,7 +181,7 @@
 			projectRoot = "";
 			targets = (
 				ADF5301925CB526200762281 /* EssentialFeed */,
-				ADF5302225CB526200762281 /* EssentialFeedTests */,
+				ADF5304525CB580B00762281 /* EssentialFeedTests */,
 			);
 		};
 /* End PBXProject section */
@@ -180,7 +194,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADF5302125CB526200762281 /* Resources */ = {
+		ADF5304425CB580B00762281 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -199,20 +213,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADF5301F25CB526200762281 /* Sources */ = {
+		ADF5304225CB580B00762281 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD18E1A625CB7FC00073FBDC /* RemoteFeedLoaderTest.swift in Sources */,
+				ADF5304925CB580B00762281 /* EssentialFeedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		ADF5302625CB526200762281 /* PBXTargetDependency */ = {
+		ADF5304D25CB580B00762281 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = ADF5301925CB526200762281 /* EssentialFeed */;
-			targetProxy = ADF5302525CB526200762281 /* PBXContainerItemProxy */;
+			targetProxy = ADF5304C25CB580B00762281 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -387,10 +403,9 @@
 			};
 			name = Release;
 		};
-		ADF5303225CB526200762281 /* Debug */ = {
+		ADF5304F25CB580B00762281 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = EssentialFeedTests/Info.plist;
@@ -405,10 +420,9 @@
 			};
 			name = Debug;
 		};
-		ADF5303325CB526200762281 /* Release */ = {
+		ADF5305025CB580B00762281 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = EssentialFeedTests/Info.plist;
@@ -444,11 +458,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADF5303125CB526200762281 /* Build configuration list for PBXNativeTarget "EssentialFeedTests" */ = {
+		ADF5304E25CB580B00762281 /* Build configuration list for PBXNativeTarget "EssentialFeedTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ADF5303225CB526200762281 /* Debug */,
-				ADF5303325CB526200762281 /* Release */,
+				ADF5304F25CB580B00762281 /* Debug */,
+				ADF5305025CB580B00762281 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
